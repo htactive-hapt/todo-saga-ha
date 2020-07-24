@@ -1,0 +1,105 @@
+@import '~antd/dist/antd.css';
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.App {
+    width: 100%;
+    height: max-content;
+}
+
+.boards {
+    margin-top: 2%;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* CSS INPUT BOX */
+
+.input-task {
+    height: 50px;
+    border: none;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #b4b8bb;
+}
+
+.input-task:focus,
+.input-task:hover {
+    outline: none !important;
+    border: 1px solid rgb(132, 204, 204);
+    box-shadow: 0 0 5px #719ECE;
+}
+
+.task {
+    min-height: 50px;
+    margin-top: 3%;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    padding: 8px;
+    word-break: break-all;
+    border-color: 1px solid rgb(221, 205, 205);
+    box-shadow: 0 0 5px #acb1b6;
+}
+
+
+/* CSS color task */
+
+.task:nth-child(odd) {
+    background-color: white;
+}
+
+.task:nth-child(even) {
+    background-color: rgb(217, 233, 233);
+}
+
+.created-at {
+    font-weight: 100;
+}
+
+.task-title {
+    font-weight: 500;
+}
+
+.button:hover {
+    font-weight: 600;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textarea-input:active,
+.textarea-input:focus {
+    min-height: 60px;
+    outline: 0px;
+}
+
+.textarea-input,
+.textarea-input:hover {
+    border: none;
+    background-color: transparent;
+}
+
+.view-options {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.ant-tabs .ant-tabs-top {
+    width: 100%;
+}
+
+.tasks {
+    width: 100%;
+}
